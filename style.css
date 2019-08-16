@@ -10,3 +10,12 @@ tr:nth-child(odd){
 .nav-pills .show>.nav-link{
 	background-color: #57CC8A !important
 }
+nav.navbar {
+  background-color: #57CC8A !important
+}
+
+@media (min-width: 768px) {
+  nav.navbar {
+    background-color: #edfcf4 !important
+  }
+}

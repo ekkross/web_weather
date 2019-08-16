@@ -18,34 +18,38 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<header>
+		<nav class="navbar justify-content-end">
+		<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="./index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./comparisons.html">Comparisons</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="./data.html">Data</a>
+				</li>
+				<li class="nav-item dropdown">
+					 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href='./temperature_v_latitude.html'>Temp. vs. Lat.</a>
+						<a class="dropdown-item" href='./humidity_v_latitude.html'>Humidity vs. Lat.</a>
+						<a class="dropdown-item" href='./cloudiness_v_latitude.html'>Clouds vs. Lat.</a>
+						<a class="dropdown-item" href='./windspeed_v_latitude.html'>Wind vs. Lat.</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="page-header">
 					<h1>
-						Erin's Visualization Site
+						Data
 					</h1>
 				</div>
-				<ul class="nav nav-pills justify-content-end">
-					<li class="nav-item">
-						<a class="nav-link" href="./index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./comparisons.html">Comparisons</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="./data.html">Data</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href='./temperature_v_latitude.html'>Temp. vs. Lat.</a>
-							<a class="dropdown-item" href='./humidity_v_latitude.html'>Humidity vs. Lat.</a>
-							<a class="dropdown-item" href='./cloudiness_v_latitude.html'>Clouds vs. Lat.</a>
-							<a class="dropdown-item" href='./windspeed_v_latitude.html'>Wind vs. Lat.</a>
-						</div>
-					</li>
-				</ul>
 			</div>
 		</div>
 		<hr>
