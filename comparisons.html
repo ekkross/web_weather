@@ -1,0 +1,77 @@
+<!-- A ["Comparisons" page](#comparisons-page) that:
+  * Contains all of the visualizations on the same page so we can easily visually compare them.
+  * Uses a bootstrap grid for the visualizations.
+    * The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens. -->
+
+<!DOCTYPE html>
+<html lang="en" class="bg-light">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Comparisons</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1>
+					Erin's Visualization Site
+				</h1>
+			</div>
+			<ul class="nav nav-pills justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link" href="./index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="./comparisons.html">Comparisons</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./data.html">Data</a>
+				</li>
+				<li class="nav-item dropdown">
+					 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href='./temperature_v_latitude.html'>Temp. vs. Lat.</a>
+						<a class="dropdown-item" href='./humidity_v_latitude.html'>Humidity vs. Lat.</a>
+						<a class="dropdown-item" href='./cloudiness_v_latitude.html'>Clouds vs. Lat.</a>
+						<a class="dropdown-item" href='./windspeed_v_latitude.html'>Wind vs. Lat.</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<hr>
+			<p>
+				Click on any image to see more detail.
+			</p>
+			<div class="row">
+				<div class="col-md-6">
+					<a href='./temperature_v_latitude.html'><img alt="Temperature vs. Latitude" src="./latitude_temperature.png" /></a>
+				</div>
+				<div class="col-md-6">
+					<a href='./humidity_v_latitude.html'><img alt="Humidity vs. Latitude" src="./latitude_humidity.png" /></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<a href='./cloudiness_v_latitude.html'><img alt="Cloudiness vs. Latitude" src="./latitude_cloud.png" /></a>
+				</div>
+				<div class="col-md-6">
+					<a href='./windspeed_v_latitude.html'><img alt="Wind Speed vs. Latitude" src="./latitude_wind.png" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
